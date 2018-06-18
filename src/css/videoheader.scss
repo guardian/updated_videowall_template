@@ -1,0 +1,159 @@
+
+@import "mq";
+
+
+.vw-custom-banner-block {
+	display: inline-block;
+	width: 100%;
+}
+
+.vw-custom-banner {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 0px;
+	padding-bottom: 55%;
+	width: 100%;
+}
+
+.vw-custom-banner figure.vw-custom-banner-media {
+	margin: 0;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.socializer {
+	border-style: solid;
+	border-color: white;
+	border-width: 1px;
+	border-radius: 50%;
+	width: 37px;
+	height: 37px;
+}
+
+.socializer:hover {
+	border-color: #ffabdb;
+
+	svg path {
+		fill: #ffabdb;
+	}
+}
+
+#vw-video-wrapper {
+	height: 0px;
+	padding-bottom: 55%;
+	width: 100%;
+}
+
+#vw-video-player {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+
+iframe .ytp-title {
+	display: none;
+}
+
+.vw-custom-banner .vw-custom-banner-title {
+	position: absolute;
+	opacity: 0.8;
+
+	@include mq($until: mobile) {
+	top: 20px;
+	left: 0px;
+	width: 60%;
+	}
+
+	@include mq($from: mobile, $until: tablet) {
+	top: 20px;
+	left: 00px;
+	width: 70%;
+	}
+
+	@include mq($from: tablet, $until: desktop) {
+	top: 10px;
+	left: 0px;
+	width: 60%;
+	}
+
+	@include mq($from: desktop, $until: leftCol) {
+	top: 20px;
+	left: 0px;
+	width: 60%;
+	}
+
+	@include mq($from: leftCol, $until: wide) {
+	top: 20px;
+	left: 0px;
+	width: 65%;
+	}
+
+	@include mq($from: wide) {
+	top: 20px;
+	left: 20px;
+	width: 60%;
+	}
+
+
+}
+
+.vw-video-soon {
+	display: none;
+}
+
+
+
+
+
+
+.vw-custom-banner .vw-custom-banner-title img {
+	max-width: 100%;
+	width: 100%;
+}
+
+@media (max-width: 739px) {
+
+	.vw-custom-banner figure.vw-custom-banner-media video {
+		position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    min-width: 100%;
+	    min-height: 100%;
+	    width: auto;
+	    height: auto;
+	    -moz-transform: translateX(-50%) translateY(-50%);
+	    -webkit-transform: translateX(-50%) translateY(-50%);
+	    transform: translateX(-50%) translateY(-50%);
+	}
+
+	.vw-custom-banner {
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 0px;
+		padding-bottom: 80%;
+		width: 100%;
+	}
+}
+
+
+@media (min-width: 740px) {
+
+	.vw-custom-banner figure.vw-custom-banner-media video {
+		width: 100%;
+		height: auto;
+	}
+
+
+	.vw-custom-banner {
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 0px;
+		padding-bottom: 55%;
+		width: 100%;
+	}
+}

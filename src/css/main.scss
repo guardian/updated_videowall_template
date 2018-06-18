@@ -1,0 +1,16 @@
+@import "mq";
+@import "palette";
+@import "videowall";
+@import "videoheader";
+
+
+// Uncomment for embeds
+//@import "embed";
+
+// Uncomment for full screen (including immersive article main media)
+@import "fullscreen";
+
+.element-atom,
+.interactive-atom {
+    margin: 0 !important;
+}
